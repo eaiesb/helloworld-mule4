@@ -1,0 +1,18 @@
+#%RAML 1.0
+version: v1
+title: HelloWorld
+
+/HelloWorld:
+    get:
+      description: This is Simple Hello World API
+      responses: 
+        200:
+          body: 
+            application/json:
+              example: |
+                {"message": "Welcome to Mule4"}
+        400:
+          body: 
+            application/json:
+              example: |
+                {"message": "The API is not responding Please try again after some time"}
