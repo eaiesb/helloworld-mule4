@@ -7,15 +7,22 @@ agent any
 options {
 disableConcurrentBuilds()
 }
-    stages {
-        stage("Build Mule Source Code") {
+stages {
+  
+stage("Build Mule Source Code") {
 steps {
+          slackSend (color: "#f1502f", message: "Git URL is : ${env.GIT_URL}")
+          slackSend (color: "add8e6", message: 'salesforce-newcustomer Deployment Started')
           buildsrc() 
       }
 }
-    }
-dir ('.' ) {
-     sh '/usr/maven/apache-maven-3.3.9/bin/mvn clean package mule:deploy -Dmyenv=DEV'
-}
-}
 
+}
+   
+}
+// steps
+def buildsrc() {
+dir ('.' ) {
+     sh '/usr/maven/apache-maven-3.3.9/bin/mvn clean package mule:deploy -Dmyenv=dev'
+}
+}
