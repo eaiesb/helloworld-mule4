@@ -23,6 +23,6 @@ steps {
 // steps
 def buildsrc() {
 dir ('.' ) {
-     sh '/devops/maven/apache-maven-3.3.9/bin/mvn clean package mule:deploy -Dmyenv=dev'
+     sh '/devops/maven/apache-maven-3.3.9/bin/mvn clean package mule:deploy -Denv=DEV'
 }
 }
