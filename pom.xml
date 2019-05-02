@@ -49,7 +49,7 @@
 										<muleVersion>4.1.4</muleVersion>
 										<username>sravan345</username>
 										<password>Eaiesb123</password>
-										<applicationName>helloworld19</applicationName>
+										<applicationName>helloworld-mue4</applicationName>
 										<environment>Sandbox</environment>
 					</cloudHubDeployment>
 				</configuration>
