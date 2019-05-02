@@ -45,13 +45,16 @@
 				<extensions>true</extensions>
 				<configuration>
 				<cloudHubDeployment>
-										<uri>https://anypoint.mulesoft.com</uri>
-										<muleVersion>4.1.4</muleVersion>
-										<username>sravan345</username>
-										<password>Eaiesb123</password>
-										<applicationName>helloworld-mue4</applicationName>
-										<environment>Sandbox</environment>
-					</cloudHubDeployment>
+				    <uri>https://anypoint.mulesoft.com</uri>
+				    <muleVersion>4.1.4</muleVersion>
+				    <username>sravan345</username>
+				    <password>Eaiesb123</password>
+				    <applicationName>helloworld-mue4</applicationName>
+				    <environment>Sandbox</environment>
+				  <properties>
+                                    <env>${env}</env>
+                                   </properties>	
+				</cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
