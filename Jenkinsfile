@@ -22,14 +22,14 @@ stage('Upload Files To Artifactory') {
         script{
         sh "echo ${env.GIT_URL} > /tmp/giturl.txt"
      def server = Artifactory.server 'artifactory'
-     def uploadSpec = '''{
+     def uploadSpec = """{
   "files": [
     {
       "pattern": "**/*.zip",
       "target": "generic-local/helloworld/helloworld.zip"
     }
  ]
-}'''                 
+}"""                 
               def buildInfo1 = server.upload spec: uploadSpec
 
             }
