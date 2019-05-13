@@ -25,7 +25,7 @@ stage('Upload Files To Artifactory') {
      def uploadSpec = """{
   "files": [
     {
-      "pattern": "**/target/*.jar",
+      "pattern": "**/*.jar",
       "target": "generic-local/helloworld/helloworld.jar"
     }
  ]
