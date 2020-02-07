@@ -47,12 +47,12 @@
 				<cloudHubDeployment>
 				    <uri>https://anypoint.mulesoft.com</uri>
 				    <muleVersion>4.1.4</muleVersion>
-				    <username>sravan345</username>
-				    <password>Eaiesb123</password>
-				    <applicationName>helloworld-mue4</applicationName>
-				    <environment>Sandbox</environment>
+				    <username>EaiesbFeb20</username>
+				    <password>Eaiesb@123</password>
+				    <applicationName>helloworld-mule4</applicationName>
+				    <environment>Prod</environment>
 				  <properties>
-                                    <env>${env}</env>
+                                    <env>Dev</env>
                                    </properties>	
 				</cloudHubDeployment>
 				</configuration>
